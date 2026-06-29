@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+/*for body background and text color*/
+body{
+    background:#f4f1f1;
+    color:#f8f0f0;
+
+}
+/*for gradient background*/
+body{
+    background:linear-gradient(to right,#caf0f8,#ffffff);
+}
+/*for navigation bar*/
+nav{
+    background:#4a71ac;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+
+/*for navigation links*/
+nav ul{
+    list-style:none;
+    display:flex;
+}
+/*for navigation list items*/
+nav ul li{
+    margin-left:20px;
+}
+/*for navigation links styling*/
+nav ul li a{
+    text-decoration:none;
+    color:rgb(247, 246, 246);
+    font-weight:bold;
+    transition:0.3s;
+}
+/*for navigation links hover effect*/
+nav ul li a:hover{
+    color:#ffdd00;
+}
+/*for hero section*/
+.hero{
+    height:90vh;
+    background: url("photo-1507525428034-b723cf961d3e.jpg") no-repeat center center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:rgb(240, 236, 236);
+    text-align:center;
+}
+
+
+/*for hero section heading*/    
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+/*for hero section paragraph*/
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+/*for hero section button*/
+button{
+    background:#ffb703;
+    color:rgb(12, 1, 1);
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+/*for hero section button hover effect*/
+button:hover{
+    background:#ffaa00;
+}
+/*for content section*/
+.content{
+    width:80%;
+    margin:60px auto;
+    background:rgb(247, 244, 244);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+/*for content section hover effect*/
+.content:hover{
+    transform:translateY(-5px);
+}
+/*for content section heading*/
+.content h2{
+    color:#0077b6;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:40px;
+}
+/*for content section subheading*/
+.content p{
+    color:#555;
+    font-size:18px;
+    line-height:1.9;
+    text-align:justify;
+}
+.content img{
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+/*for form inputs and textarea*/
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+/*for form button*/
+footer{
+    background:#023047;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+/*for footer links*/
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+/*for navigation links on smaller screens*/
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+/*for navigation list items on smaller screens*/
+nav ul li{
+    margin:10px 0;
+}
+/*for hero section on smaller screens*/
+.hero h2{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+/*for content section on smaller screens*/
+.content{
+    width:95%;
+}
+/*for content section images on smaller screens*/
+.content img{
+    width:100%;
+}
+}
+/*for content section*/
+.content{
+    width:80%;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    line-height:1.8;
+}
+
+.content h2{
+    color:#0077b6;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.content h3{
+    color:#023e8a;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#555;
+    font-size:18px;
+    text-align:justify;
+}
+/*for card section*/
+.card{
+    background:white;
+    margin:25px 0;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+    border-left:6px solid #0077b6;
+}
+/*for card hover effect*/
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#0077b6;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    color:#555;
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+}
+/*for gallery section*/
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.photo{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+    text-align:center;
+}
+
+.photo:hover{
+    transform:translateY(-10px);
+}
+
+.photo img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.photo img:hover{
+    transform:scale(1.1);
+}
+
+.photo h3{
+    padding:20px;
+    color:#0077b6;
+}
+.contact-info{
+    background:#f8f9fa;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+}
+
+.contact-info h3{
+    color:#0077b6;
+    margin-top:15px;
+}
+/*for contact form*/
+form{
+    display:flex;
+    flex-direction:column;
+}
+/*for form labels*/
+form label{
+    margin-top:15px;
+    font-weight:bold;
+    color:#333;
+}
+/*for form inputs and textarea*/
+input, textarea{
+    padding:15px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+/*for form inputs and textarea focus effect*/
+input:focus,
+textarea:focus{
+    border:2px solid #0077b6;
+    outline:none;
+}
+/*for form button*/
+button{
+    margin-top:25px;
+    background:#0077b6;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+/*for form button hover effect*/
+button:hover{
+    background:#023e8a;
+}
